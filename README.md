@@ -48,6 +48,9 @@ Proyecto desarrollado por **Softmania / Cristian Osvaldo Carreño**
 ---
 
 ## Base de datos "wallet_segura"
+## 📦 Crear tabla `usuarios`
+
+<pre>```sql
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `usuario` varchar(50) NOT NULL,
@@ -56,15 +59,17 @@ CREATE TABLE `usuarios` (
   `fecha_registro` timestamp NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`),
   UNIQUE KEY `usuario` (`usuario`,`dni`,`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci; ```</pre>
 
+<pre>```sql
 INSERT INTO usuarios (usuario, dni, email)
 VALUES
   ('jmartinez', '30456789', 'jmartinez@example.com'),
   ('mgomez', '27890123', 'mgomez@example.com'),
   ('lrodriguez', '31876543', 'lrodriguez@example.com'),
   ('csuarez', '29543210', 'csuarez@example.com'),
-  ('anavarro', '30123456', 'anavarro@example.com');
+  ('anavarro', '30123456', 'anavarro@example.com');```</pre>
+  
 ### Pantalla de Login
 ![Login](img/1.jpg)
 
