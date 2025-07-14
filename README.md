@@ -47,4 +47,24 @@ Proyecto desarrollado por **Softmania / Cristian Osvaldo Carreño**
 
 ---
 
+## Base de datos "wallet_segura"
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `usuario` varchar(50) NOT NULL,
+  `dni` varchar(8) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `fecha_registro` timestamp NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `usuario` (`usuario`,`dni`,`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO usuarios (usuario, dni, email)
+VALUES
+  ('jmartinez', '30456789', 'jmartinez@example.com'),
+  ('mgomez', '27890123', 'mgomez@example.com'),
+  ('lrodriguez', '31876543', 'lrodriguez@example.com'),
+  ('csuarez', '29543210', 'csuarez@example.com'),
+  ('anavarro', '30123456', 'anavarro@example.com');
+
+
 **⚠️ Este proyecto está en desarrollo y no debe usarse aún en entornos productivos sin revisión de seguridad.**
