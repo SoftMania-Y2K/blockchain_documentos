@@ -65,6 +65,23 @@ VALUES
   ('lrodriguez', '31876543', 'lrodriguez@example.com'),
   ('csuarez', '29543210', 'csuarez@example.com'),
   ('anavarro', '30123456', 'anavarro@example.com');
+### Pantalla de Login
+![Login](img/1.jpg)
+
+### Generación y carga de Wallet
+![Wallet](img/2.jpg)
+
+### Generar y validar certificado
+![Certificado](img/3.jpg)
+
+### Subida de archivos cifrados
+![Subida](img/4.jpg)
+
+### Verificación y descarga desde blockchain
+![Ver archivos](img/5.jpg)
+
+### Backup y restauración
+![Backup](img/6.jpg)
 
 
 **⚠️ Este proyecto está en desarrollo y no debe usarse aún en entornos productivos sin revisión de seguridad.**
